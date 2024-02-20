@@ -4,6 +4,14 @@ import genre_icon from "../public/images/genre_icon.png"
 
 const Card = (props) => {
 
+    function handleClick(e) {
+        e.preventDefault()
+
+        const exitBtnEl = document.getElementById(e.target.id)
+        // exitBtnEl.style.color = 'green'
+        const songCardEl = exitBtnEl.parentElement
+        songCardEl.style.display = 'none'
+    }
 
     return (
 
@@ -24,6 +32,7 @@ const Card = (props) => {
                     <p>{props.song_card_genre_name}</p>
                 </div>
             </div>
+            <div id="exitBtn" className="song-card-exit" onClick={handleClick}>X</div>
         </div>
 
     )

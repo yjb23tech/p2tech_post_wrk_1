@@ -23,6 +23,12 @@ body {
     margin: 0px auto; 
 }
 
+.song-card-exit {
+    margin-bottom: 230px;
+    padding-right: 2px;
+    color: red;
+}
+
 .info-details {
 
     display: flex;
