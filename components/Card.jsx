@@ -7,19 +7,19 @@ const Card = (props) => {
 
     return (
 
-        <div>
-            <img src={`images/${props.song_card_cover_art}`} />
-            <div>
-                <h2>{props.song_card_song_title}</h2>
-                <div>
+        <div className="song-card">
+            <img src={`images/${props.song_card_cover_art}`} className="song-card-song-cover-art"/>
+            <div className="song-card-song-contents">
+                <h2 className="song-card-song-title">{props.song_card_song_title}</h2>
+                <div className="info-details">
                     <img src={album_icon} />
                     <p>{props.song_card_album_name}</p>
                 </div>
-                <div>
+                <div className="info-details">
                     <img src={artist_icon} />
                     <p>{props.song_card_artist_name}</p>
                 </div>
-                <div>
+                <div className="info-details">
                     <img src={genre_icon} />
                     <p>{props.song_card_genre_name}</p>
                 </div>
@@ -28,3 +28,5 @@ const Card = (props) => {
 
     )
 }
+
+export default Card; 

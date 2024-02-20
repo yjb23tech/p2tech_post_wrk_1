@@ -1,10 +1,17 @@
 import { createRoot } from "react-dom/client"
+import Card from "./components/Card.jsx"
 
 const App = () => {
-    
+
     return (
         <div>
-            <h1>Good Ass Job</h1>
+            <Card 
+                song_card_cover_art = "track_8_song_art.png"
+                song_card_song_title = "RunWay Remix"
+                song_card_album_name = "My Beautiful Dark Twisted Fantasy"
+                song_card_artist_name = "Kanye West"
+                song_card_genre_name = "Baroque Sophisticated Ignorance"
+            />
         </div>
     )
 }
